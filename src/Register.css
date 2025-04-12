@@ -1,0 +1,38 @@
+.register-section {
+    padding: 80px 15px;
+    background-color: #f0e2e1;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  .register-form {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .register-form .form-label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="tel"],
+  .register-form input[type="date"] {
+    border-radius: 5px;
+  }
+  
+  .register-form .btn-success {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .register-section {
+      padding: 60px 15px;
+    }
+  
+    .register-form h2 {
+      font-size: 1.8rem;
+    }
+  }
+  

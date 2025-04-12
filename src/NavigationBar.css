@@ -1,0 +1,31 @@
+.nav-link {
+    color: black;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: green !important;
+  }
+  
+  .active-nav {
+    color: green !important;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after,
+  .active-nav::after {
+    width: 100%;
+  }
+  
