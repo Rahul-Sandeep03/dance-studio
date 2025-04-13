@@ -20,10 +20,11 @@ function App() {
       <NavigationBar />
       <Home />
       <Instructors />
-      <Gallery />
-      <About />
+      <Gallery />     
       <Register />
+      <About />
       <Footer />
+      
     </div>
   );
 }

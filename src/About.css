@@ -28,8 +28,8 @@
   }
   
   @media (max-width: 768px) {
-    .section-title {
-      font-size: 2rem;
+    .about-section .video-container {
+      margin-bottom: 20px; 
     }
   }
   

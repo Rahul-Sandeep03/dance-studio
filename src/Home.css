@@ -70,4 +70,10 @@ body {
         font-size: 1.5rem; 
         }
   }
+  .new-batches {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e74c3c; 
+    margin-bottom: 20px;
+  }
   

@@ -33,13 +33,7 @@ const NavigationBar = () => {
             >
               Home
             </Nav.Link>
-            <Nav.Link
-              eventKey="about"
-              href="#about"
-              className={`mx-2 ${activeLink === 'about' ? 'active-nav' : ''}`}
-            >
-              About
-            </Nav.Link>
+            
             <Nav.Link
               eventKey="instructors"
               href="#instructors"
@@ -60,6 +54,13 @@ const NavigationBar = () => {
               className={`mx-2 ${activeLink === 'register' ? 'active-nav' : ''}`}
             >
               Register
+            </Nav.Link>
+            <Nav.Link
+              eventKey="about"
+              href="#about"
+              className={`mx-2 ${activeLink === 'about' ? 'active-nav' : ''}`}
+            >
+              About
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
