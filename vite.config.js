@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-const REPO_NAME = 'dance-studio';
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: `/${REPO_NAME}/`,      // must be your repo name with slashes
+  // Change this line:
+  base: '/', // Set base to root for Netlify deployment
   plugins: [react()],
-});
+})
