@@ -1,0 +1,53 @@
+.instructors-section {
+    padding: 80px 15px;
+    background-color: #f0e2e1;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .instructor-card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .instructor-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .instructor-card img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .instructors-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .col {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+  
