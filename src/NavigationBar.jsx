@@ -6,12 +6,8 @@ import './NavigationBar.css';
 const NavigationBar = () => {
   const [activeLink, setActiveLink] = useState('home'); 
   const navbarRef = useRef(null); 
-  const handleSelect = (selectedKey) => {
-    setActiveLink(selectedKey);
-  };
 
   useEffect(() => {
-   
     const sections = [
       { id: 'home', element: document.getElementById('home') },
       { id: 'about', element: document.getElementById('about') },
@@ -21,34 +17,26 @@ const NavigationBar = () => {
     ].filter(sec => sec.element); 
 
     const handleScroll = () => {
-      
       const navbarHeight = navbarRef.current ? navbarRef.current.offsetHeight : 0;
       const scrollPos = window.scrollY + navbarHeight + 1;
+      let currentActive = 'home';
 
-      let currentActive = 'home'; 
-
-     
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i].element;
         const sectionId = sections[i].id;
 
-        
         if (section && scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
           currentActive = sectionId;
           break;
         }
       }
 
-     
       if (activeLink !== currentActive) {
         setActiveLink(currentActive);
       }
     };
 
-   
     window.addEventListener('scroll', handleScroll);
-
-    
     handleScroll();
 
     return () => {
@@ -56,10 +44,18 @@ const NavigationBar = () => {
     };
   }, [activeLink]); 
 
+  const handleNavClick = (id) => {
+    setActiveLink(id);
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <Navbar ref={navbarRef} variant="light" expand="lg" sticky="top" style={{ backgroundColor: '#E5D0CF', width: '100%' }}>
       <Container fluid>
-        <Navbar.Brand href="#home" className="d-flex align-items-center" style={{ fontSize: 27 }}>
+        <Navbar.Brand onClick={() => handleNavClick('home')} className="d-flex align-items-center" style={{ fontSize: 27, cursor: 'pointer' }}>
           <img
             src={CP}
             alt="Logo"
@@ -71,40 +67,38 @@ const NavigationBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto" onSelect={handleSelect}>
+          <Nav className="ms-auto">
             <Nav.Link
               eventKey="home"
-              href="#home"
+              onClick={() => handleNavClick('home')}
               className={`mx-2 ${activeLink === 'home' ? 'active-nav' : ''}`}
             >
               Home
             </Nav.Link>
-            
-            
             <Nav.Link
               eventKey="gallery"
-              href="#gallery"
+              onClick={() => handleNavClick('gallery')}
               className={`mx-2 ${activeLink === 'gallery' ? 'active-nav' : ''}`}
             >
               Gallery
             </Nav.Link>
             <Nav.Link
               eventKey="about"
-              href="#about"
+              onClick={() => handleNavClick('about')}
               className={`mx-2 ${activeLink === 'about' ? 'active-nav' : ''}`}
             >
               About
             </Nav.Link>
             <Nav.Link
               eventKey="instructors"
-              href="#instructors"
+              onClick={() => handleNavClick('instructors')}
               className={`mx-2 ${activeLink === 'instructors' ? 'active-nav' : ''}`}
             >
               Instructors
             </Nav.Link>
             <Nav.Link
               eventKey="register"
-              href="#register"
+              onClick={() => handleNavClick('register')}
               className={`mx-2 ${activeLink === 'register' ? 'active-nav' : ''}`}
             >
               Register
