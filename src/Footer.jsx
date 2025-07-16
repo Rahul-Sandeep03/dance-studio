@@ -9,7 +9,7 @@ const Footer = () => {
         <Row className="text-center text-md-start"> 
           <Col md={6} className="mb-4 mb-md-0">
             <h5>Email Us</h5>
-            <p>Email: cherrypranildance@gmail.com</p>
+            <p>Email: Cherrydancestudio.cds@gmail.com</p>
           </Col>
           <Col md={6} className="text-center text-md-end"> 
             <h5>Follow Us</h5>

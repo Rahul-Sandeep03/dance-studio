@@ -67,7 +67,7 @@ const NavigationBar = () => {
             height="40"
             className="d-inline-block align-top me-2"
           />
-          Cherry<span style={{ color: 'green' }}>Pranil</span>
+          <span style={{ color: 'green' }}>CDS</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">

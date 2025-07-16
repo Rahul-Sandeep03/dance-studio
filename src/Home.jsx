@@ -9,7 +9,7 @@ const Home = () => {
         <Row className="justify-content-center text-center">
           <Col xs={12} md={10} lg={8}>
             <h1 className="home-title slide-in-left">
-              Welcome to <span className="studio-name">CherryPranil</span> <br />Dance Studio
+              Welcome to <span className="studio-name">Cherry</span> <br />Dance Studio
             </h1>
             <h2 className="home-subtitle">"Move with Passion, Dance with Heart!"</h2>
             <p className="lead mb-4">
