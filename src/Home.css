@@ -18,13 +18,13 @@ body {
 .home-title {
   font-size: 2.5rem;
   line-height: 1.4;
-  overflow: visible; /* Ensure the animation is not clipped */
+  overflow: visible; 
 }
 
-/* By default, show desktop title and hide mobile title */
+
 .desktop-title {
   display: inline;
-  white-space: nowrap; /* This is the key change for desktop */
+  white-space: nowrap; 
 }
 
 .mobile-title {
@@ -58,36 +58,36 @@ body {
   animation: slideInLeft 1s ease-out forwards;
 }
 
-/* MOBILE view: Force line break and adjust font sizes */
+
 @media (max-width: 768px) {
   .desktop-title {
-    display: none; /* Hide desktop title on mobile */
+    display: none;
   }
 
   .mobile-title {
-    display: block; /* Show mobile title on mobile */
+    display: block; 
   }
 
   .home-title {
-    font-size: 1.6rem; /* Smaller font size for mobile title */
+    font-size: 1.6rem;
   }
 
   .home-subtitle {
-    font-size: 1.1rem; /* Smaller font size for mobile subtitle */
+    font-size: 1.1rem; 
   }
 
   .home-section {
-    padding: 60px 15px; /* Adjust padding for mobile */
+    padding: 60px 15px; 
   }
 }
 
-/* DESKTOP view: larger text */
+
 @media (min-width: 1200px) {
   .home-title {
-    font-size: 3rem; /* Larger font size for larger screens */
+    font-size: 3rem; 
   }
 
   .home-subtitle {
-    font-size: 1.5rem; /* Larger font size for larger screens */
+    font-size: 1.5rem; 
   }
 }
