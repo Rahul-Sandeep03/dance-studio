@@ -5,11 +5,18 @@ import './Home.css';
 const Home = () => {
   return (
     <section id="home" className="home-section d-flex align-items-center">
-      <Container >
+      <Container>
         <Row className="justify-content-center text-center">
           <Col xs={12} md={10} lg={8}>
             <h1 className="home-title slide-in-left">
-              Welcome to <span className="studio-name">Cherry</span> <br />Dance Studio
+              {/* Desktop view: "Welcome to Cherry Dance Studios" in one line */}
+              <span className="desktop-title">Welcome to <span className="studio-name">Cherry</span> Dance Studios</span>
+
+              {/* Mobile view: "Welcome to" on line 1, "Cherry Dance Studios" on line 2 */}
+              <span className="mobile-title">
+                <div>Welcome to</div>
+                <div><span className="studio-name">Cherry</span> Dance Studios</div>
+              </span>
             </h1>
             <h2 className="home-subtitle">"Move with Passion, Dance with Heart!"</h2>
             <p className="lead mb-4">

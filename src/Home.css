@@ -2,8 +2,7 @@ body {
   background: #f0e2e1;
   margin: 0;
   padding: 0;
-  /* Apply a default font family if you want consistent text throughout */
-  font-family: 'Poppins', sans-serif; /* Example: If you've imported Poppins */
+  font-family: 'Poppins', sans-serif;
 }
 
 .home-section {
@@ -11,15 +10,30 @@ body {
   padding: 80px 15px;
   color: #333;
   text-align: center;
-  display: flex; /* Use flexbox to center content vertically */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-title {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  overflow: visible; /* Ensure the animation is not clipped */
+}
+
+/* By default, show desktop title and hide mobile title */
+.desktop-title {
+  display: inline;
+  white-space: nowrap; /* This is the key change for desktop */
+}
+
+.mobile-title {
+  display: none;
+}
+
+.studio-name {
+  color: green;
+  font-weight: 700;
 }
 
 .home-subtitle {
@@ -27,11 +41,6 @@ body {
   font-style: italic;
   color: #555;
   margin-bottom: 1.5rem;
-}
-
-.studio-name {
-  color: green;
-  font-weight: 700;
 }
 
 @keyframes slideInLeft {
@@ -49,26 +58,36 @@ body {
   animation: slideInLeft 1s ease-out forwards;
 }
 
+/* MOBILE view: Force line break and adjust font sizes */
 @media (max-width: 768px) {
+  .desktop-title {
+    display: none; /* Hide desktop title on mobile */
+  }
+
+  .mobile-title {
+    display: block; /* Show mobile title on mobile */
+  }
+
   .home-title {
-    font-size: 1.8rem; /* Slightly larger for better readability on smaller screens */
+    font-size: 1.6rem; /* Smaller font size for mobile title */
   }
 
   .home-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Smaller font size for mobile subtitle */
   }
 
   .home-section {
-    padding: 60px 15px;
+    padding: 60px 15px; /* Adjust padding for mobile */
   }
 }
 
+/* DESKTOP view: larger text */
 @media (min-width: 1200px) {
   .home-title {
-    font-size: 3rem;
+    font-size: 3rem; /* Larger font size for larger screens */
   }
 
   .home-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Larger font size for larger screens */
   }
 }
