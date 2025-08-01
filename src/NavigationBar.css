@@ -1,17 +1,20 @@
 /* NavigationBar.css */
 .nav-link {
   color: black;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
   position: relative;
   transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; 
 }
 
 .nav-link:hover {
-  color: green !important;
+  color: black !important;
 }
 
 .active-nav {
-  color: green !important;
+  color: black !important;
 }
 
 .nav-link::after {
@@ -21,7 +24,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: green;
+  background-color: black;
   transition: width 0.3s ease-in-out;
 }
 

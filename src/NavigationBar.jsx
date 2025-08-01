@@ -53,7 +53,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <Navbar ref={navbarRef} variant="light" expand="lg" sticky="top" style={{ backgroundColor: '#E5D0CF', width: '100%' }}>
+    <Navbar ref={navbarRef} variant="light" expand="lg" sticky="top" style={{ backgroundColor: '#f6d100ff', width: '100%' }}>
       <Container fluid>
         <Navbar.Brand onClick={() => handleNavClick('home')} className="d-flex align-items-center" style={{ fontSize: 27, cursor: 'pointer' }}>
           <img
@@ -63,7 +63,7 @@ const NavigationBar = () => {
             height="40"
             className="d-inline-block align-top me-2"
           />
-          <span style={{ color: 'green' }}>CDS</span>
+          <span style={{ color: 'black' }}>CDS</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">

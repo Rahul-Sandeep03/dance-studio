@@ -1,43 +1,57 @@
 .register-section {
   padding: 80px 15px;
-  background-color: #f0e2e1;
+  background-color: #FFD800;
   font-family: 'Poppins', sans-serif;
-  display: flex; /* Use flexbox for vertical centering */
-  align-items: center; /* Center content vertically */
+  color: black;
+  display: flex;
+  align-items: center;
 }
 
 .register-form {
   background-color: #fff;
   border-radius: 10px;
-  /* Add some default padding to the card itself if needed */
-  padding: 30px; /* Example: adjust as needed */
+  padding: 30px;
+  color: black;
 }
 
 .register-form .form-label {
   font-weight: 600;
-  color: #333;
-  margin-bottom: 0.5rem; /* Add some space below labels */
+  color: black;
+  margin-bottom: 0.5rem;
 }
+
 
 .register-form input[type="text"],
 .register-form input[type="email"],
 .register-form input[type="tel"],
 .register-form input[type="date"] {
   border-radius: 5px;
-  border: 1px solid #ced4da; /* Ensure a consistent border */
-  padding: 0.75rem 1rem; /* Adjust padding for better input feel */
+  border: 1px solid #ced4da;
+  padding: 0.75rem 1rem;
 }
 
 .register-form .form-check-label {
-    margin-left: 0.5rem; /* Space out radio labels from inputs */
+  margin-left: 0.5rem;
 }
 
 .register-form .btn-success {
   font-weight: 600;
   font-size: 1rem;
-  padding: 0.75rem 1.25rem; /* Adjust padding for button */
+  padding: 0.75rem 1.25rem;
 }
-
+.custom-register-btn {
+  background-color: black;  
+  border-color: #FFD800;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  transition: background-color 0.3s ease;
+}
+.custom-register-btn:hover {
+  background-color: #FFD800;
+  border-color: #FFD800;
+}
 @media (max-width: 768px) {
   .register-section {
     padding: 60px 15px;
@@ -46,15 +60,19 @@
   .register-form h2 {
     font-size: 1.8rem;
   }
+ 
 }
+
 @media (max-width: 576px) {
-    .register-section {
-        padding: 40px 10px; /* More padding reduction for very small screens */
-    }
-    .register-form {
-        padding: 20px; /* Reduce card padding */
-    }
-    .register-form h2 {
-        font-size: 1.6rem;
-    }
+  .register-section {
+    padding: 40px 10px;
+  }
+
+  .register-form {
+    padding: 20px;
+  }
+
+  .register-form h2 {
+    font-size: 1.6rem;
+  }
 }

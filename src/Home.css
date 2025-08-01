@@ -1,14 +1,16 @@
 body {
-  background: #f0e2e1;
+  background: #FFD800;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  color: black;
 }
 
 .home-section {
   min-height: 100vh;
   padding: 80px 15px;
-  color: #333;
+  background-color: #FFD800;
+  color: black;
   text-align: center;
   display: flex;
   align-items: center;
@@ -32,14 +34,14 @@ body {
 }
 
 .studio-name {
-  color: green;
+  color: black;
   font-weight: 700;
 }
 
 .home-subtitle {
   font-size: 1.3rem;
   font-style: italic;
-  color: #555;
+  color: black;
   margin-bottom: 1.5rem;
 }
 
