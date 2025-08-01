@@ -156,7 +156,7 @@ const Register = () => {
                   <div className="mb-3">
                     <label htmlFor="userMobile" className="form-label">Mobile</label>
                     <PhoneInput
-                      country={'in'}
+                      country={'ca'}
                       value={formData.user_mobile}
                       onChange={handlePhoneChange}
                       inputProps={{
