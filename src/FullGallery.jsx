@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; // Import Link for navigation
-import './Gallery.css'; // Reuse the same CSS for styling
+import { Link } from 'react-router-dom';
+import './Gallery.css';
 
-// Import all your gallery images
 import galleryImage1 from './Image1.webp';
 import galleryImage2 from './Image2.webp';
 import galleryImage3 from './Image3.webp';
@@ -39,7 +38,6 @@ const FullGallery = () => {
           ))}
         </Row>
         <div className="text-center mt-5">
-          {/* Link to navigate back to the home page */}
           <Link to="/">
             <Button className="view-more-button">
               Back to Main Tab
