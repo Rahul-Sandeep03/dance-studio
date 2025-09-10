@@ -1,5 +1,5 @@
 body {
-  background: #FFD800;
+  background: white;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -9,7 +9,7 @@ body {
 .home-section {
   min-height: 100vh;
   padding: 80px 15px;
-  background-color: #FFD800;
+  background-color: white ;
   color: black;
   text-align: center;
   display: flex;

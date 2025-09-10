@@ -53,7 +53,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <Navbar ref={navbarRef} variant="light" expand="lg" sticky="top" style={{ backgroundColor: '#f6d100ff', width: '100%' }}>
+    <Navbar ref={navbarRef} variant="light" expand="lg" sticky="top" style={{ backgroundColor: 'white', width: '100%' }}>
       <Container fluid>
         <Navbar.Brand onClick={() => handleNavClick('home')} className="d-flex align-items-center" style={{ fontSize: 27, cursor: 'pointer' }}>
           <img

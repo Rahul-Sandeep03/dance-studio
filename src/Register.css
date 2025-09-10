@@ -1,6 +1,6 @@
 .register-section {
   padding: 80px 15px;
-  background-color: #FFD800;
+  background-color: white;
   font-family: 'Poppins', sans-serif;
   color: black;
   display: flex;
@@ -41,7 +41,7 @@
 }
 .custom-register-btn {
   background-color: black;  
-  border-color: #FFD800;
+  border-color: white;
   color: white;
   font-weight: 600;
   font-size: 1rem;
@@ -49,8 +49,8 @@
   transition: background-color 0.3s ease;
 }
 .custom-register-btn:hover {
-  background-color: #FFD800;
-  border-color: #FFD800;
+  background-color: white;
+  border-color: white;
 }
 @media (max-width: 768px) {
   .register-section {
